@@ -1,0 +1,263 @@
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffcc00; 
+    width: 100%; 
+    text-align: center;
+}
+
+.newsPage {
+    background-color: #111;
+    padding: 100px 20px 20px; 
+    min-height: 100vh;
+    color: #fff;
+}
+
+.newsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; 
+    padding-top: 20px;
+    width: 100%;
+}
+
+.noArticles, .loadingText {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 50px;
+    color: #bbb;
+}
+
+.loadingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #ffd700;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.searchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px auto; 
+}
+
+.searchInput {
+    flex: 1; 
+    max-width: 400px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 2px solid #ffcc00;
+    background-color: #1a1a1a;
+    color: white;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.searchInput:focus {
+    border-color: #ffdd44;
+    box-shadow: 0px 0px 10px rgba(255, 221, 68, 0.8);
+}
+
+.searchButton {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: #ffcc00;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.3s;
+    white-space: nowrap; 
+}
+
+.searchButton:hover {
+    background: #e6b800;
+}
+
+.newsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 10px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.newsCard {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.newsCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.newsImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.newsTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+
+.newsSource {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+
+.newsDescription {
+    font-size: 0.95rem;
+    color: #ddd;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+
+.readMore {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.readMore:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 0.5rem;
+}
+
+.pagination button {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #e0e0e0;
+}
+
+.pagination button:disabled {
+    color: #999;
+    cursor: not-allowed;
+}
+
+.pagination button.pageArrow {
+    font-weight: bold;
+}
+
+.pagination button.activePage {
+    background-color: #3366cc;
+    color: white;
+    border-color: #3366cc;
+}
+
+.pagination span {
+    padding: 0 0.5rem;
+}
+
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .newsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .newsCard {
+        padding: 15px;
+    }
+
+    .filterControls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filterGroup, .searchGroup {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .searchInput {
+        width: 100%;
+    }
+}

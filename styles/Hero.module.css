@@ -1,0 +1,58 @@
+.heroSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("/images/hero.jpg") no-repeat center center/cover;
+  position: relative;
+}
+
+.heroOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.heroContent {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.buttonGroup {
+  margin-top: 20px;
+}
+
+.getStarted {
+  background: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.authButton {
+  background: transparent;
+  color: white;
+  padding: 12px 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.getStarted:hover {
+  background: #0056b3;
+}
+
+.authButton:hover {
+  background: white;
+  color: black;
+}

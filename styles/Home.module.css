@@ -1,0 +1,115 @@
+
+.authModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #222;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+  z-index: 1000;
+  width: 350px;
+  text-align: center;
+}
+
+.authModal h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.authModal input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.authModal button {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary-color);
+  color: black;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.authModal button:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: black;
+}
+
+.navbar .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.navLinks a:hover {
+  color: var(--primary-color);
+}
+
+
+.authButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.authButtons button {
+  background: var(--primary-color);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.authButtons button:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
