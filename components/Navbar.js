@@ -1,4 +1,4 @@
-// The navigation bar with authentication buttons and links to home, news and review pages.
+// The navigation bar with authentication buttons and links to home, news, reviews and personal car review pages.
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -36,6 +36,7 @@ export default function Navbar() {
                     <Link href="/home"><span>Home</span></Link>
                     <Link href="/newspage"><span>News</span></Link>
                     <Link href="/reviews"><span>Reviews</span></Link>
+                    <Link href="/getReview"><span>Personal Car Review</span></Link>
                 </div>
             </nav>
 
