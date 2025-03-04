@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
-import styles from "../styles/reviews.module.css";
+import styles from "../styles/Reviews.module.css";
 import Footer from "../components/Footer";
 
 export default function Reviews() {
