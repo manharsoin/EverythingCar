@@ -1,7 +1,7 @@
 .container {
   min-height: 100vh;
   padding-top: 40px;
-  background: url('/images/car-background.jpg') no-repeat center center/cover;
+  background: url('/Images/car-background.jpg') no-repeat center center/cover;
   display: flex;
   justify-content: flex-start;
   align-items: center;
